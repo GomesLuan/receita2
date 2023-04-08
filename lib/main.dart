@@ -1,5 +1,26 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  MyApp app = MyApp();
+  runApp(app);
+}
+
+class MyApp extends StatelessWidget {
+  MyApp();
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
+      home: Scaffold(
+        appBar: NewAppBar(),
+        body: NewBody(),
+        bottomNavigationBar: NewNavBar(),
+      )
+    );
+  }
+}
+
 class NewAppBar extends StatelessWidget implements PreferredSizeWidget {
   NewAppBar();
 
@@ -57,16 +78,4 @@ class NewNavBar extends StatelessWidget {
       )
     ]);
   }
-}
-
-void main() {
-  MaterialApp app = MaterialApp(
-    theme: ThemeData(primarySwatch: Colors.deepPurple),
-    home: Scaffold(
-      appBar: NewAppBar(),
-      body: NewBody(),
-      bottomNavigationBar: NewNavBar(),
-    )
-  );
-  runApp(app);
 }
