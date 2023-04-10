@@ -64,9 +64,9 @@ class NewBody extends StatelessWidget {
 }
 
 class NewNavBar extends StatelessWidget {
-  final List<Icon> icons;
+  List<Icon> icons;
   
-  NewNavBar({required this.icons});
+  NewNavBar({this.icons = const [] });
 
   void botaoFoiTocado(int index) {
     print("Tocaram no botão $index");
