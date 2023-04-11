@@ -46,16 +46,15 @@ class NewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
-            child: Text("La Fin Du Monde - Bock - 65 ibu"),
+            child: Center(child: Text("La Fin Du Monde - Bock - 65 ibu")),
           ),
           Expanded(
-            child: Text("Sapporo Premiume - Sour Ale - 54 ibu"),
+            child: Center(child: Text("Sapporo Premiume - Sour Ale - 54 ibu")),
           ),
           Expanded(
-            child: Text("Duvel - Pilsner - 82 ibu"),
+            child: Center(child: Text("Duvel - Pilsner - 82 ibu")),
           )
         ]
       )
@@ -64,7 +63,7 @@ class NewBody extends StatelessWidget {
 }
 
 class NewNavBar extends StatelessWidget {
-  List<Icon> icons;
+  final List<Icon> icons;
   
   NewNavBar({this.icons = const [] });
 
